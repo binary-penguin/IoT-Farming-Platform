@@ -1,0 +1,118 @@
+Actividad 1:
+CREATE TABLE Alumno(matricula VARCHAR(10) NOT NULL,
+                    nombre    VARCHAR(20) NOT NULL,
+                    carrera   VARCHAR(5)  NOT NULL,
+                    plan      VARCHAR(5)  NOT NULL,
+                    direccion VARCHAR(20) NOT NULL,
+                    telefono  VARCHAR(15) NOT NULL,
+                    PRIMARY KEY(matricula));
+
+INSERT INTO Alumno VALUES('111222','DIANA SANCHEZ','LAE','2011','REFORMA 102','55121212');
+INSERT INTO Alumno VALUES('111333','ELVIA IBANEZ','CPF','2065','PATRIOTISMO 304','55131313');
+INSERT INTO Alumno VALUES('111444','EVELYN GOMEZ','IIS','2015','INSURGENTES 501','55141414');
+INSERT INTO Alumno VALUES('136137','FERNANDO ROJAS','ISC','2018','MORELOS 102','55131313');
+INSERT INTO Alumno VALUES('136140','LETICIA DIAZ','IMT','2016','HIDALGO 301','722141414');
+
+************************************************************
+Actividad 2:
+CREATE TABLE Curso(clave    VARCHAR(10) NOT NULL,
+                   nombre   VARCHAR(30) NOT NULL,
+                   semestre INT         NOT NULL,
+                   PRIMARY KEY(clave));
+
+INSERT INTO Curso VALUES('TC1018','ESTRUCTURA DATOS',3);
+INSERT INTO Curso VALUES('TC2018','REDES I',4);
+INSERT INTO Curso VALUES('TC1020','BASES DATOS',4);
+INSERT INTO Curso VALUES('TC2022','REDES II',5);
+INSERT INTO Curso VALUES('TC2026','WEB APPs',7);
+
+************************************************************
+Actividad 3: Crear tablas Cursa1, y crear los INSERT a la tablas
+
+
+CREATE TABLE cursa1(	matricula VARCHAR(10) NOT NULL,
+			cveCurso  VARCHAR(10) NOT NULL,
+			grupo     VARCHAR(10) NOT NULL,
+                        salon     VARCHAR(10) NOT NULL,
+			horario   VARCHAR(10) NOT NULL);
+
+
+INSERT INTO Cursa1 VALUES('111333','TC2018','1','302','9:00');
+INSERT INTO Cursa1 VALUES('111333','TC2022','1','311','11:00');
+INSERT INTO Cursa1 VALUES('111444','TC2018','1','302','9:00');
+INSERT INTO Cursa1 VALUES('111444','TC2026','1','305','7:00');
+
+
+************************************************************
+Actividad 4: Crear tablas Cursa2 , y crear los INSERT a la tablas
+
+CREATE TABLE cursa2(	matricula VARCHAR(10) NOT NULL,
+			cveCurso  VARCHAR(10) NOT NULL,
+			grupo     VARCHAR(10) NOT NULL,
+                        salon     VARCHAR(10) NOT NULL,
+			horario   VARCHAR(10) NOT NULL,
+			FOREIGN KEY(matricula) REFERENCES alumno(matricula),
+			FOREIGN KEY(cveCurso)  REFERENCES curso(clave));
+
+INSERT INTO Cursa2 VALUES('111333','TC2018','1','302','9:00');
+INSERT INTO Cursa2 VALUES('111333','TC2022','1','311','11:00');
+INSERT INTO Cursa2 VALUES('111444','TC2018','1','302','9:00');
+INSERT INTO Cursa2 VALUES('111444','TC2026','1','305','7:00');
+
+INSERT INTO Cursa2 VALUES('111444','TC2099','1','302','9:00');
+INSERT INTO Cursa2 VALUES('111999','TC2026','1','305','7:00');
+
+************************************************************
+Actividad 5: Crear tablas Cursa
+
+CREATE TABLE cursa(	matricula VARCHAR(10) NOT NULL,
+			cveCurso  VARCHAR(10) NOT NULL,
+			grupo     VARCHAR(10) NOT NULL,
+                        salon     VARCHAR(10) NOT NULL,
+			horario   VARCHAR(10) NOT NULL,
+			FOREIGN KEY(matricula) REFERENCES alumno(matricula),
+			FOREIGN KEY(cveCurso)  REFERENCES curso(clave),
+			PRIMARY KEY(matricula, cveCurso));
+
+INSERT INTO Cursa VALUES('111333','TC2018','1','302','9:00');
+INSERT INTO Cursa VALUES('111333','TC2022','1','311','11:00');
+INSERT INTO Cursa VALUES('111444','TC2018','1','302','9:00');
+INSERT INTO Cursa VALUES('111444','TC2026','1','305','7:00');
+
+INSERT INTO Cursa VALUES('111444','TC2099','1','302','9:00');
+INSERT INTO Cursa VALUES('111999','TC2026','1','305','7:00');
+
+************************************************************
+Actividad 6: Crear los Queries con una tabla, y relacionales de 3 tablas, para obtener información.
+
+ 1) Reporte de cursos inscritos por alumno en particular
+
+
+SELECT *
+FROM cursa
+WHERE matricula = '111444';
+
+
+SELECT *
+FROM cursa, curso;
+
+SELECT *
+FROM cursa, curso
+WHERE (cursa.cveCurso = curso.clave) AND (matricula = '111444');
+
+
+SELECT alumno.matricula, alumno.nombre, carrera, cvecurso, curso.nombre, semestre, grupo, salon, horario
+FROM alumno, cursa, curso
+WHERE (cveCurso = clave) AND (alumno.matricula = cursa.matricula);
+
+SELECT alumno.matricula, alumno.nombre, carrera, cvecurso, curso.nombre, semestre, grupo, salon, horario
+FROM alumno, cursa, curso
+WHERE (cveCurso = clave) AND (alumno.matricula = cursa.matricula) AND (alumno.matricula = '111444');
+
+
+ 2) Lista de alumnos inscritos en un curso
+
+
+SELECT cveCurso, curso.nombre, alumno.matricula, alumno.nombre, carrera
+FROM curso, cursa, alumno
+WHERE (alumno.matricula = cursa.matricula) AND (cveCurso = 'TC2018') AND (cveCurso = clave);
