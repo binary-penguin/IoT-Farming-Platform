@@ -1,0 +1,213 @@
+(window["canvasWebpackJsonp"]=window["canvasWebpackJsonp"]||[]).push([[119],{"2/9e":function(e,a,t){"use strict"
+var n=t("An8g")
+t("q1tI")
+var r=t("i8i4")
+var i=t.n(r)
+var o=t("bwhI")
+var m=t("pQTu")
+var c=t("m0r6")
+Object(c["a"])(JSON.parse('{"ar":{"late_8bd684b6":"متأخر","missing_d59852a7":"مفقود"},"ca":{"late_8bd684b6":"endarrerit","missing_d59852a7":"falta"},"cy":{"late_8bd684b6":"yn hwyr","missing_d59852a7":"ar goll"},"da":{"late_8bd684b6":"sen","missing_d59852a7":"mangler"},"da-x-k12":{"late_8bd684b6":"sen","missing_d59852a7":"mangler"},"de":{"late_8bd684b6":"verspätet","missing_d59852a7":"fehlt"},"en-AU":{"late_8bd684b6":"late","missing_d59852a7":"missing"},"en-AU-x-unimelb":{"late_8bd684b6":"late","missing_d59852a7":"missing"},"en-CA":{"late_8bd684b6":"late","missing_d59852a7":"missing"},"en-GB":{"late_8bd684b6":"late","missing_d59852a7":"missing"},"en-GB-x-lbs":{"late_8bd684b6":"late","missing_d59852a7":"missing"},"en-GB-x-ukhe":{"late_8bd684b6":"late","missing_d59852a7":"missing"},"es":{"late_8bd684b6":"con atraso","missing_d59852a7":"faltante"},"fa":{"late_8bd684b6":"با تأخیر","missing_d59852a7":"از دست رفته"},"fi":{"late_8bd684b6":"myöhässä","missing_d59852a7":"puuttuu"},"fr":{"late_8bd684b6":"En retard","missing_d59852a7":"manquant"},"fr-CA":{"late_8bd684b6":"en retard","missing_d59852a7":"manquant"},"he":{"late_8bd684b6":"מאוחר","missing_d59852a7":"חסר"},"ht":{"late_8bd684b6":"an reta","missing_d59852a7":"manke"},"hu":{"late_8bd684b6":"késői","missing_d59852a7":"hiányzó"},"is":{"late_8bd684b6":"seint","missing_d59852a7":"vantar"},"it":{"late_8bd684b6":"in ritardo","missing_d59852a7":"mancante"},"ja":{"late_8bd684b6":"遅延","missing_d59852a7":"欠如"},"mi":{"late_8bd684b6":"Tōmuri","missing_d59852a7":"ngaro"},"nb":{"late_8bd684b6":"sen","missing_d59852a7":"mangler"},"nb-x-k12":{"late_8bd684b6":"sen","missing_d59852a7":"mangler"},"nl":{"late_8bd684b6":"te laat","missing_d59852a7":"ontbreekt"},"nn":{"late_8bd684b6":"for sein","missing_d59852a7":"manglar"},"pl":{"late_8bd684b6":"po czasie","missing_d59852a7":"brak"},"pt":{"late_8bd684b6":"atrasada","missing_d59852a7":"em falta"},"pt-BR":{"late_8bd684b6":"atrasado","missing_d59852a7":"em falta"},"ru":{"late_8bd684b6":"поздно","missing_d59852a7":"отсутствует"},"sl":{"late_8bd684b6":"zamuda","missing_d59852a7":"manjkajoče"},"sv":{"late_8bd684b6":"sena","missing_d59852a7":"saknas"},"sv-x-k12":{"late_8bd684b6":"sena","missing_d59852a7":"saknas"},"uk":{"late_8bd684b6":"пізно","missing_d59852a7":"відсутній"},"zh-Hans":{"late_8bd684b6":"迟交","missing_d59852a7":"缺失"},"zh-Hant":{"late_8bd684b6":"逾期","missing_d59852a7":"缺失"}}'))
+t("jQeR")
+t("0sPK")
+var d=m["default"].scoped("gradingStatusPill")
+function l(e,a){for(let t=0;t<e.length;t+=1)a(e[t])}a["a"]={renderPills(){const e=document.querySelectorAll(".submission-missing-pill")
+const a=document.querySelectorAll(".submission-late-pill")
+l(e,e=>{i.a.render(Object(n["a"])(o["a"],{variant:"danger",text:d.t("missing")}),e)})
+l(a,e=>{i.a.render(Object(n["a"])(o["a"],{variant:"danger",text:d.t("late")}),e)})}}},"5Shj":function(e,a,t){"use strict"
+var n=t("Ff2n")
+var r=t("1OyB")
+var i=t("vuIU")
+var o=t("Ji7U")
+var m=t("LK+K")
+var c=t("q1tI")
+var d=t.n(c)
+var l=t("17x9")
+var s=t.n(l)
+var _=t("UCAh")
+var b=t("J2CL")
+var p=t("nAyT")
+var u=t("oXx0")
+var f=t("bZJi")
+var h=t("AdN2")
+var y=function(e){var a=e.typography,t=e.spacing
+return{fontFamily:a.fontFamily,fontWeight:a.fontWeightNormal,fontSize:a.fontSizeSmall,padding:t.small}}
+t.d(a,"a",(function(){return j}))
+var g,v,O,S,k,C
+var x={componentId:"eZLSb",template:function(e){return"\n\n.eZLSb_bGBk{box-sizing:border-box;display:block;font-family:".concat(e.fontFamily||"inherit",";font-size:").concat(e.fontSize||"inherit",";font-weight:").concat(e.fontWeight||"inherit",";padding:").concat(e.padding||"inherit","}")},root:"eZLSb_bGBk"}
+var j=(g=Object(p["a"])("7.0.0",null,"Use Tooltip from ui-tooltip instead."),v=Object(u["a"])(),O=Object(b["j"])(y,x),g(S=v(S=O(S=(C=k=function(e){Object(o["a"])(t,e)
+var a=Object(m["a"])(t)
+function t(){Object(r["a"])(this,t)
+return a.apply(this,arguments)}Object(i["a"])(t,[{key:"render",value:function(){var e=this.props,a=e.children,t=e.tip,r=e.variant,i=e.on,o=e.placement,m=e.mountNode,c=e.positionTarget,l=e.constrain,s=Object(n["a"])(e,["children","tip","variant","on","placement","mountNode","positionTarget","constrain"])
+return d.a.createElement(f["a"],Object.assign({},s,{renderTip:t,on:i,color:"inverse"===r?"primary":"primary-inverse",placement:o,mountNode:m,positionTarget:c,constrain:l}),a)}}])
+t.displayName="Tooltip"
+return t}(c["Component"]),k.propTypes={children:s.a.oneOfType([s.a.node,s.a.func]).isRequired,tip:s.a.node.isRequired,as:s.a.elementType,on:s.a.oneOfType([s.a.oneOf(["click","hover","focus"]),s.a.arrayOf(s.a.oneOf(["click","hover","focus"]))]),variant:s.a.oneOf(["default","inverse"]),placement:_["a"].placement,mountNode:_["a"].mountNode,positionTarget:s.a.oneOfType([h["a"],s.a.func]),constrain:_["a"].constrain},k.defaultProps={on:void 0,variant:"inverse",placement:"top",mountNode:null,positionTarget:void 0,constrain:"window"},C))||S)||S)||S)},"7WS/":function(e,a,t){"use strict"
+var n=t("pQTu")
+var r=t("m0r6")
+Object(r["a"])(JSON.parse('{"ar":{"play_media_comment_35257210":"تشغيل تعليق الوسائط.","play_media_comment_by_name_from_createdat_515b3b":"تشغيل تعليق الوسائط بواسطة %{name} من %{createdAt}."},"ca":{"play_media_comment_35257210":"Reprodueix el comentari multimèdia.","play_media_comment_by_name_from_createdat_515b3b":"Reprodueix el comentari multimèdia de %{name} enviat el %{createdAt}."},"cy":{"play_media_comment_35257210":"Chwarae sylw ar gyfryngau.","play_media_comment_by_name_from_createdat_515b3b":"Chwarae sylw ar gyfryngau gan %{name} o %{createdAt}."},"da":{"play_media_comment_35257210":"Afspil medie kommentar.","play_media_comment_by_name_from_createdat_515b3b":"Afspil mediekommentar af %{name} fra %{createdAt}."},"da-x-k12":{"play_media_comment_35257210":"Afspil medie kommentar.","play_media_comment_by_name_from_createdat_515b3b":"Afspil mediekommentar af %{name} fra %{createdAt}."},"de":{"play_media_comment_35257210":"Medienkommentar wiedergeben","play_media_comment_by_name_from_createdat_515b3b":"Medienkommentar durch %{name} von %{createdAt} wiedergeben."},"en-AU":{"play_media_comment_35257210":"Play media comment.","play_media_comment_by_name_from_createdat_515b3b":"Play media comment by %{name} from %{createdAt}."},"en-AU-x-unimelb":{"play_media_comment_35257210":"Play media comment.","play_media_comment_by_name_from_createdat_515b3b":"Play media comment by %{name} from %{createdAt}."},"en-CA":{"play_media_comment_35257210":"Play media comment.","play_media_comment_by_name_from_createdat_515b3b":"Play media comment by %{name} from %{createdAt}."},"en-GB":{"play_media_comment_35257210":"Play media comment.","play_media_comment_by_name_from_createdat_515b3b":"Play media comment by %{name} from %{createdAt}."},"en-GB-x-lbs":{"play_media_comment_35257210":"Play media comment.","play_media_comment_by_name_from_createdat_515b3b":"Play media comment by %{name} from %{createdAt}."},"en-GB-x-ukhe":{"play_media_comment_35257210":"Play media comment.","play_media_comment_by_name_from_createdat_515b3b":"Play media comment by %{name} from %{createdAt}."},"es":{"play_media_comment_35257210":"Reproducir comentario de multimedia.","play_media_comment_by_name_from_createdat_515b3b":"Reproducir comentario de multimedia de %{name} desde %{createdAt}."},"fa":{"play_media_comment_35257210":"پخش نظر رسانه ای","play_media_comment_by_name_from_createdat_515b3b":" نظر رسانه‌ای %{name} را  از %{createdAt} پخش کنید."},"fi":{"play_media_comment_35257210":"Toista mediakommentti.","play_media_comment_by_name_from_createdat_515b3b":"Toista mediakommentti %{name} kohteesta %{createdAt}."},"fr":{"play_media_comment_35257210":"Lancer le commentaire sur média.","play_media_comment_by_name_from_createdat_515b3b":"Lancer le commentaire sur média par %{name} à partir de %{createdAt}."},"fr-CA":{"play_media_comment_35257210":"Lire le commentaire du support","play_media_comment_by_name_from_createdat_515b3b":"Lire le commentaire du support par %{name} du %{createdAt}."},"ht":{"play_media_comment_35257210":"Jwe kòmantè medya.","play_media_comment_by_name_from_createdat_515b3b":"Jwe kòmantè medya pa %{name} de %{createdAt}."},"is":{"play_media_comment_35257210":"Spila miðilsathugasemd.","play_media_comment_by_name_from_createdat_515b3b":"Spila miðilsathugasemd eftir %{name} frá %{createdAt}."},"it":{"play_media_comment_35257210":"Commento sulla riproduzione del contenuto multimediale.","play_media_comment_by_name_from_createdat_515b3b":"Commento sulla riproduzione del contenuto multimediale da parte di %{name} da %{createdAt}."},"ja":{"play_media_comment_35257210":"メディア コメントの再生。","play_media_comment_by_name_from_createdat_515b3b":"%{name}まで%{createdAt}からのメディアのコメントを再生します。"},"mi":{"play_media_comment_35257210":"Mahia ngā korero pāpāho","play_media_comment_by_name_from_createdat_515b3b":"Mahia ngā korero pāpāho ma %{name} mai te %{createdAt}."},"nb":{"play_media_comment_35257210":"Spill mediainnhold","play_media_comment_by_name_from_createdat_515b3b":"Spill mediainnhold av %{name} fra %{createdAt}."},"nb-x-k12":{"play_media_comment_35257210":"Spill mediainnhold","play_media_comment_by_name_from_createdat_515b3b":"Spill mediainnhold av %{name} fra %{createdAt}."},"nl":{"play_media_comment_35257210":"Media-opmerking afspelen","play_media_comment_by_name_from_createdat_515b3b":"Speel media-opmerking door %{name} van %{createdAt} af."},"nn":{"play_media_comment_35257210":"Spel av medieinnhald.","play_media_comment_by_name_from_createdat_515b3b":"Spel av mediekommentar frå %{name} den %{createdAt}."},"pl":{"play_media_comment_35257210":"Odtwórz komentarz multimedialny.","play_media_comment_by_name_from_createdat_515b3b":"Odtwórz komentarz multimedialny %{name} z %{createdAt}."},"pt":{"play_media_comment_35257210":"Reproduzir comentário de mídia.","play_media_comment_by_name_from_createdat_515b3b":"Reproduzir comentários de mídia %{name} de %{createdAt}."},"pt-BR":{"play_media_comment_35257210":"Reproduzir comentário em mídia.","play_media_comment_by_name_from_createdat_515b3b":"Reproduzir comentário em mídia por %{name} de %{createdAt}."},"ru":{"play_media_comment_35257210":"Воспроизведение мультимедийного комментария.","play_media_comment_by_name_from_createdat_515b3b":"Воспроизвести мультимедийный комментарии %{name} из %{createdAt}."},"sl":{"play_media_comment_35257210":"Predvajaj komentar v obliki medija.","play_media_comment_by_name_from_createdat_515b3b":"Predvajaj komentar v obliki medija %{name}, ki je bil ustvarjen ob/dne %{createdAt}."},"sv":{"play_media_comment_35257210":"Spela upp mediekommentar.","play_media_comment_by_name_from_createdat_515b3b":"Spela upp mediekommentar av %{name} från %{createdAt}."},"sv-x-k12":{"play_media_comment_35257210":"Spela upp mediekommentar.","play_media_comment_by_name_from_createdat_515b3b":"Spela upp mediekommentar av %{name} från %{createdAt}."},"zh-Hans":{"play_media_comment_35257210":"播放媒体评论。","play_media_comment_by_name_from_createdat_515b3b":"播放%{name}的来自%{createdAt}的媒体评论。"},"zh-Hant":{"play_media_comment_35257210":"播放媒體評論。","play_media_comment_by_name_from_createdat_515b3b":"播放%{name}於%{createdAt}創建的媒體評論。"}}'))
+t("jQeR")
+t("0sPK")
+var i=n["default"].scoped("mediaCommentThumbnail")
+var o=t("GLiE")
+var m=t.n(o)
+var c=t("5Ky4")
+var d=t("ouhR")
+var l=t.n(d)
+var s=t("hX7l")
+const _={normal:{width:140,height:100},small:{width:70,height:50}}
+function b(e,a,t){if(!INST.kalturaSettings)return console.log("Kaltura has not been enabled for this account")
+let n,r
+const o=l()(e)
+try{const e=document.createElement("a")
+e.href=o.attr("href")
+r=e}catch(e){}if(r&&Object(s["a"])(r.search).no_preview)return
+const m=_[a]||_.normal
+const d=o.data("media_comment_id")||l.a.trim(o.find(".media_comment_id:first").text())||(n=o.attr("id"))&&n.match(/^media_comment_/)&&n.substring(14)||l.a.trim(o.parent().find(".media_comment_id:first").text())
+const b=o.data("author")
+const p=o.data("created_at")
+let u
+u=b&&p?i.t("Play media comment by %{name} from %{createdAt}.",{name:b,createdAt:p}):i.t("Play media comment.")
+if(d){const e="https://".concat(INST.kalturaSettings.resource_domain)
+const n="".concat(e,"/p/").concat(INST.kalturaSettings.partner_id,"/thumbnail/entry_id/").concat(d,"/width/")+"".concat(m.width,"/height/").concat(m.height,"/bgcolor/000000/type/2/vid_sec/5")
+const r=l()("<span\n        style='background-image: url(".concat(Object(c["a"])(n),");'\n        class='media_comment_thumbnail media_comment_thumbnail-").concat(Object(c["a"])(a),"'\n      >\n        <span class='media_comment_thumbnail_play_button'>\n          <span class='screenreader-only'>\n            ").concat(Object(c["a"])(u),"\n          </span>\n        </span>\n      </span>"))
+const i=o.closest("p")
+i.attr("title")||i.attr("title",Object(c["a"])(u))
+let s=o
+if(t){s=o.clone().empty().removeClass("instructure_file_link")
+const e=o.parent(".instructure_file_link_holder")
+e.length?s.appendTo(e):o.after(s)}else o.empty()
+s.data("download",s.attr("href")).prop("href","#").addClass("instructure_inline_media_comment").append(r).css({backgroundImage:"",padding:0})}}l.a.fn.mediaCommentThumbnail=function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"normal"
+let a=arguments.length>1?arguments[1]:void 0
+return this.each((function(){m.a.defer(b,this,e,a)}))}},OShF:function(e,a,t){"use strict"
+var n=t("ouhR")
+var r=t.n(n)
+var i=t("5Ky4")
+t("JI1W")
+r.a.fn.fillTemplateData=function(e){if(this.length&&e){e.iterator&&this.find("*").andSelf().each((function(){const a=r()(this)
+r.a.each(["name","id","class"],(t,n)=>{a.attr(n)&&a.attr(n,a.attr(n).replace(/-iterator-/,e.iterator))})}))
+e.id&&this.attr("id",e.id)
+let n=false
+if(e.data)for(var a in e.data){if(e.except&&-1!=r.a.inArray(a,e.except))continue
+e.data[a]&&e.dataValues&&-1!=r.a.inArray(a,e.dataValues)&&this.data(a,e.data[a].toString())
+const o=this.find("."+a)
+var t=e.avoid||""
+o.each((function(){const o=r()(this)
+if(o.length>0&&0===o.closest(t).length){"undefined"!==typeof e.data[a]&&null!==e.data[a]||(e.data[a]="")
+if(e.htmlValues&&-1!=r.a.inArray(a,e.htmlValues)){o.html(r.a.raw(e.data[a].toString()))
+if(o.hasClass("user_content")){n=true
+o.removeClass("enhanced")
+o.data("unenhanced_content_html",e.data[a].toString())}}else if("INPUT"==o[0].tagName.toUpperCase())o.val(e.data[a])
+else try{const t=e.data[a].toString()
+o.html(Object(i["a"])(t))}catch(e){}}}))}e.hrefValues&&e.data&&this.find("a,span[rel]").each((function(){let a,t,n,i=r()(this)
+for(const o in e.hrefValues){if(!e.hrefValues.hasOwnProperty(o))continue
+const m=e.hrefValues[o]
+if(a=i.attr("href")){const t=r.a.replaceTags(a,m,encodeURIComponent(e.data[m]))
+const n=i.text()===i.html()?i.text():null
+if(a!==t){i.attr("href",t)
+n&&i.text(n)}}(t=i.attr("rel"))&&i.attr("rel",r.a.replaceTags(t,m,e.data[m]));(n=i.attr("name"))&&i.attr("name",r.a.replaceTags(n,m,e.data[m]))}}))
+n&&r()(document).triggerHandler("user_content_change")}return this}
+r.a.fn.fillTemplateData.defaults={htmlValues:null,hrefValues:null}
+r.a.fn.getTemplateData=function(e){if(!this.length||!e)return{}
+var a,t={}
+if(e.textValues){const a=this
+e.textValues.forEach(e=>{const i=a.find("."+e.replace(/\[/g,"\\[").replace(/\]/g,"\\]")+":first")
+n=r.a.trim(i.text())
+"&nbsp;"===i.html()&&(n="")
+1===n.length&&160===n.charCodeAt(0)&&(n="")
+t[e]=n})}if(e.dataValues)for(a in e.dataValues){var n=this.data(e.dataValues[a])
+n&&(t[e.dataValues[a]]=n)}if(e.htmlValues)for(a in e.htmlValues){const i=this.find("."+e.htmlValues[a].replace(/\[/g,"\\[").replace(/\]/g,"\\]")+":first")
+n=null
+n=i.hasClass("user_content")&&i.data("unenhanced_content_html")?i.data("unenhanced_content_html"):r.a.trim(i.html())
+t[e.htmlValues[a]]=n}return t}
+r.a.fn.getTemplateValue=function(e,a){const t=r.a.extend({},a,{textValues:[e]})
+return this.getTemplateData(t)[e]}},bZJi:function(e,a,t){"use strict"
+var n=t("Ff2n")
+var r=t("VTBJ")
+var i=t("1OyB")
+var o=t("vuIU")
+var m=t("Ji7U")
+var c=t("LK+K")
+var d=t("q1tI")
+var l=t.n(d)
+var s=t("17x9")
+var _=t.n(s)
+var b=t("nAyT")
+var p=t("KgFQ")
+var u=t("jtGx")
+var f=t("sQ3t")
+var h=t("E+IV")
+var y=t("UCAh")
+var g=t("BTe1")
+var v=t("J2CL")
+var O=t("oXx0")
+var S=t("jsCG")
+var k=t("AdN2")
+var C=function(e){var a=e.typography,t=e.spacing
+return{fontFamily:a.fontFamily,fontWeight:a.fontWeightNormal,fontSize:a.fontSizeSmall,padding:t.small}}
+t.d(a,"a",(function(){return M}))
+var x,j,T,A,w,q
+var Z={componentId:"eZLSb",template:function(e){return"\n\n.eZLSb_bGBk{box-sizing:border-box;display:block;font-family:".concat(e.fontFamily||"inherit",";font-size:").concat(e.fontSize||"inherit",";font-weight:").concat(e.fontWeight||"inherit",";padding:").concat(e.padding||"inherit","}")},root:"eZLSb_bGBk"}
+var M=(x=Object(b["a"])("8.0.0",{tip:"renderTip",variant:"color"}),j=Object(O["a"])(),T=Object(v["j"])(C,Z),x(A=j(A=T(A=(q=w=function(e){Object(m["a"])(t,e)
+var a=Object(c["a"])(t)
+function t(){var e
+Object(i["a"])(this,t)
+for(var n=arguments.length,r=new Array(n),o=0;o<n;o++)r[o]=arguments[o]
+e=a.call.apply(a,[this].concat(r))
+e._id=Object(g["a"])("Tooltip")
+e.state={hasFocus:false}
+e.handleFocus=function(a){e.setState({hasFocus:true})}
+e.handleBlur=function(a){e.setState({hasFocus:false})}
+return e}Object(o["a"])(t,[{key:"renderTrigger",value:function(){var e=this.props,a=e.children,n=e.as
+var i=this.state.hasFocus
+var o={"aria-describedby":this._id}
+if(n){var m=Object(p["a"])(t,this.props)
+var c=Object(u["a"])(this.props,t.propTypes)
+return l.a.createElement(m,Object.assign({},c,o),a)}return"function"===typeof a?a({focused:i,getTriggerProps:function(e){return Object(r["a"])({},o,{},e)}}):Object(f["a"])(this.props.children,o)}},{key:"render",value:function(){var e=this
+var a=this.props,t=a.renderTip,r=a.isShowingContent,i=a.defaultIsShowingContent,o=a.on,m=a.placement,c=a.mountNode,d=a.constrain,s=a.offsetX,_=a.offsetY,b=a.positionTarget,p=a.onShowContent,f=a.onHideContent,y=a.tip,g=(a.variant,Object(n["a"])(a,["renderTip","isShowingContent","defaultIsShowingContent","on","placement","mountNode","constrain","offsetX","offsetY","positionTarget","onShowContent","onHideContent","tip","variant"]))
+var v=this.props.variant
+v=v?"default"===v?"primary-inverse":"primary":this.props.color
+return l.a.createElement(S["a"],Object.assign({},Object(u["b"])(g),{isShowingContent:r,defaultIsShowingContent:i,on:o,shouldRenderOffscreen:true,shouldReturnFocus:false,placement:m,color:"primary"===v?"primary-inverse":"primary",mountNode:c,constrain:d,shadow:"none",offsetX:s,offsetY:_,positionTarget:b,renderTrigger:function(){return e.renderTrigger()},onShowContent:p,onHideContent:f,onFocus:this.handleFocus,onBlur:this.handleBlur}),l.a.createElement("span",{id:this._id,className:Z.root,role:"tooltip"},t?Object(h["a"])(t):y))}}])
+t.displayName="Tooltip"
+return t}(d["Component"]),w.propTypes={children:_.a.oneOfType([_.a.node,_.a.func]).isRequired,renderTip:_.a.oneOfType([_.a.node,_.a.func]),isShowingContent:_.a.bool,defaultIsShowingContent:_.a.bool,as:_.a.elementType,on:_.a.oneOfType([_.a.oneOf(["click","hover","focus"]),_.a.arrayOf(_.a.oneOf(["click","hover","focus"]))]),color:_.a.oneOf(["primary","primary-inverse"]),placement:y["a"].placement,mountNode:y["a"].mountNode,constrain:y["a"].constrain,offsetX:_.a.oneOfType([_.a.string,_.a.number]),offsetY:_.a.oneOfType([_.a.string,_.a.number]),positionTarget:_.a.oneOfType([k["a"],_.a.func]),onShowContent:_.a.func,onHideContent:_.a.func,tip:_.a.node,variant:_.a.oneOf(["default","inverse"])},w.defaultProps={renderTip:void 0,isShowingContent:void 0,defaultIsShowingContent:false,on:void 0,color:"primary",placement:"top",mountNode:null,constrain:"window",offsetX:0,offsetY:0,positionTarget:void 0,onShowContent:function(e){},onHideContent:function(e,a){a.documentClick}},q))||A)||A)||A)},bwhI:function(e,a,t){"use strict"
+var n=t("rePB")
+var r=t("1OyB")
+var i=t("vuIU")
+var o=t("md7G")
+var m=t("foSv")
+var c=t("Ji7U")
+var d=t("q1tI")
+var l=t.n(d)
+var s=t("17x9")
+var _=t.n(s)
+var b=t("TSYQ")
+var p=t.n(b)
+var u=t("n12J")
+var f=t("5Shj")
+var h=t("J2CL")
+var y=t("nAyT")
+var g=t("jtGx")
+var v=t("oXx0")
+function O(e){var a=e.borders,t=e.colors,n=e.spacing,r=e.typography
+return{fontFamily:r.fontFamily,fontWeight:r.fontWeightNormal,padding:"0 ".concat(n.xSmall),height:"1.3125rem",background:t.backgroundLightest,lineHeight:r.lineHeightFit,textTransformStyle:"uppercase",textFontSize:r.fontSizeXSmall,textFontWeight:r.fontWeightBold,maxWidth:"15rem",color:t.textDark,primaryColor:t.textBrand,dangerColor:t.textDanger,successColor:t.textSuccess,warningColor:t.textWarning,messageColor:t.textAlert,borderWidth:a.widthSmall,borderStyle:a.style,borderRadius:"999rem",focusOutlineWidth:a.widthMedium,focusOutlineColor:t.borderBrand,focusOutlineStyle:a.style}}O["canvas-a11y"]=O["canvas-high-contrast"]=function(e){var a=e.colors
+return{color:a.textDarkest,borderColor:a.borderDarkest}}
+O.canvas=function(e){return{primaryColor:e["ic-brand-primary"]}}
+var S=t("sIA8")
+t.d(a,"a",(function(){return q}))
+var k,C,x,j,T,A
+var w={componentId:"bZMhq",template:function(e){return"\n\n.bZMhq_bGBk{align-items:center;background:".concat(e.background||"inherit",";border-radius:").concat(e.borderRadius||"inherit",";border-style:").concat(e.borderStyle||"inherit",";border-width:").concat(e.borderWidth||"inherit",";box-sizing:border-box;font-family:").concat(e.fontFamily||"inherit",";height:").concat(e.height||"inherit",";padding:").concat(e.padding||"inherit","}\n\n.bZMhq_bGBk.bZMhq_daKB{outline:none;overflow:visible;position:relative}\n\n.bZMhq_bGBk.bZMhq_daKB:before{border:").concat(e.focusOutlineWidth||"inherit"," ").concat(e.focusOutlineStyle||"inherit"," ").concat(e.focusOutlineColor||"inherit",";border-radius:").concat(e.borderRadius||"inherit",';bottom:-0.375rem;box-sizing:border-box;content:"";display:block;left:-0.375rem;opacity:0;pointer-events:none;position:absolute;right:-0.375rem;top:-0.375rem;transform:scale(0.95);transition:all 0.2s}\n\n.bZMhq_bGBk.bZMhq_daKB.bZMhq_cVYB:before{opacity:1;transform:scale(1)}\n\n.bZMhq_eWKC{box-sizing:border-box;flex:1 0 auto;font-size:').concat(e.textFontSize||"inherit",";font-weight:").concat(e.textFontWeight||"inherit",";letter-spacing:0.0625rem;line-height:").concat(e.lineHeight||"inherit",";max-width:").concat(e.maxWidth||"inherit",";min-width:0.0625rem;text-align:center;text-transform:").concat(e.textTransformStyle||"inherit","}\n\n[dir=ltr] .bZMhq_eWKC,[dir=rtl] .bZMhq_eWKC{text-align:center}\n\n.bZMhq_ddES{border-color:").concat(e.color||"inherit","}\n\n.bZMhq_ddES .bZMhq_eWKC{color:").concat(e.color||"inherit","}\n\n.bZMhq_bXiG{border-color:").concat(e.primaryColor||"inherit","}\n\n.bZMhq_bXiG .bZMhq_eWKC{color:").concat(e.primaryColor||"inherit","}\n\n.bZMhq_cOXX{border-color:").concat(e.successColor||"inherit","}\n\n.bZMhq_cOXX .bZMhq_eWKC{color:").concat(e.successColor||"inherit","}\n\n.bZMhq_zGXc{border-color:").concat(e.dangerColor||"inherit","}\n\n.bZMhq_zGXc .bZMhq_eWKC{color:").concat(e.dangerColor||"inherit","}\n\n.bZMhq_eRqw{border-color:").concat(e.warningColor||"inherit","}\n\n.bZMhq_eRqw .bZMhq_eWKC{color:").concat(e.warningColor||"inherit","}\n\n.bZMhq_elxg{border-color:").concat(e.messageColor||"inherit","}\n\n.bZMhq_elxg .bZMhq_eWKC{color:").concat(e.messageColor||"inherit","}")},root:"bZMhq_bGBk",truncated:"bZMhq_daKB",focused:"bZMhq_cVYB",text:"bZMhq_eWKC",default:"bZMhq_ddES",primary:"bZMhq_bXiG",success:"bZMhq_cOXX",danger:"bZMhq_zGXc",warning:"bZMhq_eRqw",message:"bZMhq_elxg"}
+var q=(k=Object(y["a"])("7.0.0",null,"Use Pill from ui-pill instead."),C=Object(v["a"])(),x=Object(h["j"])(O,w),k(j=C(j=x(j=(A=T=function(e){Object(c["a"])(a,e)
+function a(e){var t
+Object(r["a"])(this,a)
+t=Object(o["a"])(this,Object(m["a"])(a).call(this,e))
+t.state={truncated:false}
+return t}Object(i["a"])(a,[{key:"handleTruncation",value:function(e){this.setState({truncated:e})}},{key:"renderPill",value:function(e,t){var r,i=this
+var o=this.props,m=o.margin,c=o.text,d=o.variant,s=o.as,_=o.elementRef
+var b=u["a"].omitViewProps(Object(g["a"])(this.props,a.propTypes),a)
+var f="function"===typeof t?t(b):b
+var h=p()((r={},Object(n["a"])(r,w.root,true),Object(n["a"])(r,w.truncated,this.state.truncated),Object(n["a"])(r,w.focused,e),Object(n["a"])(r,w[d],d),r))
+return l.a.createElement(u["a"],Object.assign({},f,{className:h,as:s,elementRef:_,margin:m,display:"inline-flex"}),l.a.createElement("span",{className:w.text},l.a.createElement(S["a"],{onUpdate:function(e){i.handleTruncation(e)}},c)))}},{key:"render",value:function(){var e=this
+return this.state.truncated?l.a.createElement(f["a"],{tip:this.props.text},(function(a){var t=a.focused,n=a.getTriggerProps
+return e.renderPill(t,n)})):this.renderPill()}}])
+a.displayName="Pill"
+return a}(d["Component"]),T.propTypes={text:_.a.node.isRequired,margin:h["c"].spacing,variant:_.a.oneOf(["default","success","danger","primary","warning","message"]),elementRef:_.a.func,as:_.a.elementType},T.defaultProps={margin:void 0,elementRef:void 0,variant:"default"},A))||j)||j)||j)}}])
+
+//# sourceMappingURL=119-c-477aacdc81.js.map
